@@ -1,0 +1,203 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0B39FC16-4BCA-4273-AF26-0DAB10AD93AB}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ThuHocPhi2</RootNamespace>
+    <AssemblyName>ThuHocPhi2</AssemblyName>
+    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Connect\Connector.cs" />
+    <Compile Include="Controls\DuLieuHocPhi\ctrl_KhoiTaoHocKy.cs" />
+    <Compile Include="Controls\DuLieuHocPhi\ctrl_TuDienSinhVien.cs" />
+    <Compile Include="Controls\HeThong\ctrl_CauHinh.cs" />
+    <Compile Include="Controls\HeThong\ctrl_DangNhap.cs" />
+    <Compile Include="Controls\MaHoaMD5.cs" />
+    <Compile Include="Controls\Utils.cs" />
+    <Compile Include="Models\DuLieuHocPhi\KhoiTaoHocKy_ett.cs" />
+    <Compile Include="Models\DuLieuHocPhi\TuDienSinhVien_ett.cs" />
+    <Compile Include="Models\HeThong\CauHinh_ett.cs" />
+    <Compile Include="Models\HeThong\DangNhap_ett.cs" />
+    <Compile Include="Views\DuLieuHocPhi\frm_CapNhatSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_CapNhatSinhVien.Designer.cs">
+      <DependentUpon>frm_CapNhatSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_TuDienSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_TuDienSinhVien.Designer.cs">
+      <DependentUpon>frm_TuDienSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_CapNhatHocKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_CapNhatHocKy.Designer.cs">
+      <DependentUpon>frm_CapNhatHocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_KhoiTaoHocKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_KhoiTaoHocKy.Designer.cs">
+      <DependentUpon>frm_KhoiTaoHocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_TaoMoiHocKy.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_TaoMoiHocKy.Designer.cs">
+      <DependentUpon>frm_TaoMoiHocKy.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_ThemSinhVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_ThemSinhVien.Designer.cs">
+      <DependentUpon>frm_ThemSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\frm_CauHinh.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\frm_CauHinh.Designer.cs">
+      <DependentUpon>frm_CauHinh.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\frm_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\frm_DangNhap.Designer.cs">
+      <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HeThong\frm_Main.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\HeThong\frm_Main.Designer.cs">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\DuLieuHocPhi\frm_CapNhatSinhVien.resx">
+      <DependentUpon>frm_CapNhatSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DuLieuHocPhi\frm_TuDienSinhVien.resx">
+      <DependentUpon>frm_TuDienSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DuLieuHocPhi\frm_CapNhatHocKy.resx">
+      <DependentUpon>frm_CapNhatHocKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DuLieuHocPhi\frm_KhoiTaoHocKy.resx">
+      <DependentUpon>frm_KhoiTaoHocKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DuLieuHocPhi\frm_TaoMoiHocKy.resx">
+      <DependentUpon>frm_TaoMoiHocKy.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DuLieuHocPhi\frm_ThemSinhVien.resx">
+      <DependentUpon>frm_ThemSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\frm_CauHinh.resx">
+      <DependentUpon>frm_CauHinh.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\frm_DangNhap.resx">
+      <DependentUpon>frm_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\HeThong\frm_Main.resx">
+      <DependentUpon>frm_Main.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <COMReference Include="Microsoft.Office.Core">
+      <Guid>{2DF8D04C-5BFA-101B-BDE5-00AA0044DE52}</Guid>
+      <VersionMajor>2</VersionMajor>
+      <VersionMinor>8</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="Microsoft.Office.Interop.Excel">
+      <Guid>{00020813-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>9</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+    <COMReference Include="VBIDE">
+      <Guid>{0002E157-0000-0000-C000-000000000046}</Guid>
+      <VersionMajor>5</VersionMajor>
+      <VersionMinor>3</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>primary</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
