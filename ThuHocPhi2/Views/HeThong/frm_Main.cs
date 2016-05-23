@@ -81,5 +81,12 @@ namespace ThuHocPhi2
             Utils.ShowFormInPanel(panel1, f);
             Utils.ShowFormCenterOfPanel(f);
         }
+
+        private void từĐiểnMônHọcToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Views.DuLieuHocPhi.frm_TuDienMonHoc f = new Views.DuLieuHocPhi.frm_TuDienMonHoc();
+            Utils.ShowFormInPanel(panel1, f);
+            Utils.ShowFormCenterOfPanel(f);
+        }
     }
 }

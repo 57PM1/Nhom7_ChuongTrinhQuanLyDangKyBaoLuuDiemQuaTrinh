@@ -64,8 +64,8 @@ namespace ThuHocPhi2.Views.DuLieuHocPhi
         private void btnCapNhat_Click(object sender, EventArgs e)
         {
             ett.MaSV = dataGridView1.Rows[dong].Cells[0].Value.ToString();
-            ett.HoTen = dataGridView1.Rows[dong].Cells[0].Value.ToString();
-            ett.Lop = dataGridView1.Rows[dong].Cells[0].Value.ToString();
+            ett.HoTen = dataGridView1.Rows[dong].Cells[1].Value.ToString();
+            ett.Lop = dataGridView1.Rows[dong].Cells[2].Value.ToString();
             frm_CapNhatSinhVien f = new frm_CapNhatSinhVien(ett);
             f.ShowDialog();
             try

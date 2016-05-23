@@ -49,20 +49,40 @@
   <ItemGroup>
     <Compile Include="Connect\Connector.cs" />
     <Compile Include="Controls\DuLieuHocPhi\ctrl_KhoiTaoHocKy.cs" />
+    <Compile Include="Controls\DuLieuHocPhi\ctrl_TuDienMonHoc.cs" />
     <Compile Include="Controls\DuLieuHocPhi\ctrl_TuDienSinhVien.cs" />
     <Compile Include="Controls\HeThong\ctrl_CauHinh.cs" />
     <Compile Include="Controls\HeThong\ctrl_DangNhap.cs" />
     <Compile Include="Controls\MaHoaMD5.cs" />
     <Compile Include="Controls\Utils.cs" />
     <Compile Include="Models\DuLieuHocPhi\KhoiTaoHocKy_ett.cs" />
+    <Compile Include="Models\DuLieuHocPhi\TuDienMonHoc_ett.cs" />
     <Compile Include="Models\DuLieuHocPhi\TuDienSinhVien_ett.cs" />
     <Compile Include="Models\HeThong\CauHinh_ett.cs" />
     <Compile Include="Models\HeThong\DangNhap_ett.cs" />
+    <Compile Include="Views\DuLieuHocPhi\frm_CapNhatMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_CapNhatMonHoc.Designer.cs">
+      <DependentUpon>frm_CapNhatMonHoc.cs</DependentUpon>
+    </Compile>
     <Compile Include="Views\DuLieuHocPhi\frm_CapNhatSinhVien.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Views\DuLieuHocPhi\frm_CapNhatSinhVien.Designer.cs">
       <DependentUpon>frm_CapNhatSinhVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_ThemMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_ThemMonHoc.Designer.cs">
+      <DependentUpon>frm_ThemMonHoc.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_TuDienMonHoc.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Views\DuLieuHocPhi\frm_TuDienMonHoc.Designer.cs">
+      <DependentUpon>frm_TuDienMonHoc.cs</DependentUpon>
     </Compile>
     <Compile Include="Views\DuLieuHocPhi\frm_TuDienSinhVien.cs">
       <SubType>Form</SubType>
@@ -114,8 +134,17 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Views\DuLieuHocPhi\frm_CapNhatMonHoc.resx">
+      <DependentUpon>frm_CapNhatMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Views\DuLieuHocPhi\frm_CapNhatSinhVien.resx">
       <DependentUpon>frm_CapNhatSinhVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DuLieuHocPhi\frm_ThemMonHoc.resx">
+      <DependentUpon>frm_ThemMonHoc.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Views\DuLieuHocPhi\frm_TuDienMonHoc.resx">
+      <DependentUpon>frm_TuDienMonHoc.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Views\DuLieuHocPhi\frm_TuDienSinhVien.resx">
       <DependentUpon>frm_TuDienSinhVien.cs</DependentUpon>
